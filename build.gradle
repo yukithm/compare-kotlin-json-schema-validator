@@ -16,6 +16,11 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+
+    // for everit-org
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 dependencies {
@@ -35,6 +40,22 @@ dependencies {
     implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.10.2"
     implementation "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2"
     implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2"
+
+    // everit-org
+    implementation "com.github.everit-org.json-schema:org.everit.json.schema:1.12.1"
+
+    // medeia
+    implementation "com.worldturner.medeia:medeia-validator-jackson:1.1.0"
+
+    // justify
+    implementation "org.leadpony.justify:justify:2.0.0"
+    runtimeOnly "org.glassfish:jakarta.json:1.1.6:module"
+
+    // networknt
+    implementation "com.networknt:json-schema-validator:1.0.31"
+    runtimeOnly "org.slf4j:slf4j-api:1.7.30"
+    runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
+    runtimeOnly "org.apache.commons:commons-lang3:3.9"
 }
 
 sourceCompatibility = 11

@@ -3,6 +3,11 @@
  */
 package sandbox
 
+import kotlinsandbox.jsonvalidate.EveritOrg
+import kotlinsandbox.jsonvalidate.Justify
+import kotlinsandbox.jsonvalidate.Medeia
+import kotlinsandbox.jsonvalidate.Networknt
+
 class App {
     val greeting: String
         get() {
@@ -11,5 +16,21 @@ class App {
 }
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+//    println(App().greeting)
+
+    println("-".repeat(60))
+    println("everit-org:")
+    EveritOrg().run()
+
+    println("-".repeat(60))
+    println("networknt:")
+    Networknt().run()
+
+    println("-".repeat(60))
+    println("justify:")
+    Justify().run()
+
+    println("-".repeat(60))
+    println("medeia:")
+    Medeia().run()
 }
