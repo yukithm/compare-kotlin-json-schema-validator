@@ -30,6 +30,11 @@ dependencies {
 
     // Use the Kotlin JUnit integration.
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
+
+    // JSON
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.10.2"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.2"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.2"
 }
 
 sourceCompatibility = 11
